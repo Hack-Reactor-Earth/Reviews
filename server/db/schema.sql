@@ -68,3 +68,10 @@ SELECT SETVAL((SELECT PG_GET_SERIAL_SEQUENCE('"characteristic_reviews"', 'id')),
 --Drop all:
 
 DROP TABLE reviews, reviews_photos, characteristics, characteristic_reviews;
+
+--Indices:
+
+CREATE INDEX idx_characteristic_reviews_characteristic_id ON characteristic_reviews(characteristic_id);
+CREATE INDEX idx_characteristics_product_id ON characteristics(product_id);
+CREATE INDEX idx_reviews_photos_review_id ON reviews_photos(review_id);
+CREATE INDEX idx_reviews_product_id ON reviews(product_id);

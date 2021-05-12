@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Hack-Reactor-Earth/Reviews#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "k6": "*",
     "nodemon": "^2.0.7",
     "pg": "^8.6.0"
   }
