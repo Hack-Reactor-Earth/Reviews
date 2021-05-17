@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const db = require("./db/db.js");
+// const config = require('../config.js');
 
 app.use(express.json());
 
